@@ -62,4 +62,4 @@ class CreateDataset():
         return torch.utils.data.TensorDataset(x.unsqueeze(1), y.unsqueeze(1))
 
 if __name__=="__main__":
-    torch.save(CreateDataset(size_limit=0.5, device=torch.device("cpu")).files_process(), "vars/datasetp5.pt")
+    torch.save(CreateDataset(device=torch.device("cpu")).files_process(), "vars/dataset3.pt")
